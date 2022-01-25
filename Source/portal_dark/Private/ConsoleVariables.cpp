@@ -1,6 +1,13 @@
 
 #include "ConsoleVariables.h"
 
+static TAutoConsoleVariable<int32> CVarPortalAdjustmentEnabled(
+	TEXT("portal.AdjustmentEnabled"),
+	1,
+	TEXT("Whether to try to adjust the created portal so it would not be opened out of bounds of the surface."),
+	ECVF_Default
+);
+
 static TAutoConsoleVariable<int32> CVarPortalAdjustmentVisualizeSteps(
 	TEXT("portal.AdjustmentVisualizeSteps"),
 	0,
