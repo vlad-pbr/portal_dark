@@ -17,7 +17,7 @@ static TAutoConsoleVariable<int32> CVarPortalAdjustmentVisualizeSteps(
 
 static TAutoConsoleVariable<int32> CVarPortalAdjustmentMultiplier(
 	TEXT("portal.AdjustmentMultiplier"),
-	25,
+	1,
 	TEXT("When trying to align a portal on a portalable surface, defines the size of the step for each trace. The smaller the better."),
 	ECVF_Default
 );
