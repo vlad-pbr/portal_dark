@@ -21,3 +21,10 @@ static TAutoConsoleVariable<int32> CVarPortalAdjustmentMultiplier(
 	TEXT("When trying to align a portal on a portalable surface, defines the size of the step for each trace. The smaller the better."),
 	ECVF_Default
 );
+
+static TAutoConsoleVariable<int32> CVarPortalPlayerVisualizePrediction(
+	TEXT("portal.PlayerVisualizePrediction"),
+	0,
+	TEXT("Visualize player location prediction which triggers collision with portals."),
+	ECVF_Default
+);
